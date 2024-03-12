@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #fff;
+    background: #1e1d2b;
 }
 
 .container{
@@ -14,6 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    color: #fff;
 }
 
 .content1, .content2, 
@@ -105,7 +106,12 @@
     align-items: center;
     padding-top: 70px;
 }
+.content5 h3{
+    font-size: 1.2em;
+    color: #ff702a;
+}
 .content5 b{
+    font-size: 2.5em;
     align-self: center;
 }
 .content5 .fila{
@@ -119,6 +125,7 @@
     display: flex;
     align-items: center;
     height: 220px;
+    background: #fff;
 }
 .content5 .fila div{
     display: flex;
@@ -128,7 +135,48 @@
 .content5 .fila div p{
     align-self: center;
 }
+.content5 .fila div b:first-child{
+    font-size: 1em;
+}
+
 .content5 .fila div b:last-child{
     color: #ff702a;
+    font-size: 1em;
     margin: 0;
+}
+.content6{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content6 b{
+    display: flex;
+    font-size: 2.5em;
+    align-self: center;
+}
+.content6 .fila{
+    display: grid;
+    padding: 50px;
+    gap: 20px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.content6 .fila img{
+    display: flex;
+    align-items: center;
+    height: 220px;
+    justify-self: center;
+}
+.content6 .fila div{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+.content6 .fila div b{
+    color: #ff702a;
+}
+.content6 .fila div p{
+    text-align: center;
 }
