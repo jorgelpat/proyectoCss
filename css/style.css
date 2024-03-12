@@ -68,3 +68,67 @@
 .content2 img{
     width: 400px;
 }
+.content3 img{
+    height: 400px;
+}
+.content3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.content4 h3{
+    color: #ff702a;
+}
+.content4 b{
+    font-size: 2.5em;
+    text-transform: capitalize;
+}
+.content4 p{
+    font-weight: 600;
+}
+.content4 button{
+    background: #ff702a;
+    border: none;
+    font-weight: 700;
+    padding: 5px;
+}
+.content5{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+.content5 b{
+    align-self: center;
+}
+.content5 .fila{
+    display: grid;
+    padding: 50px;
+    gap: 20px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.content5 .fila img{
+    display: flex;
+    align-items: center;
+    height: 220px;
+}
+.content5 .fila div{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+.content5 .fila div p{
+    align-self: center;
+}
+.content5 .fila div b:last-child{
+    color: #ff702a;
+    margin: 0;
+}
