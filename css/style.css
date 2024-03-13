@@ -180,3 +180,53 @@
 .content6 .fila div p{
     text-align: center;
 }
+
+.content7{
+    height: 100vh;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content7 .cuadro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 70%;
+    background: #ffefe8;
+}
+.content7 .cuadro h2{
+    color: #000;
+    background: #ffefe8;
+}
+.content7 .cuadro button{
+    align-self: center;
+    background: #ff702a;
+    text-transform: capitalize;
+    border: 0;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    grid-column: 1/3;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: capitalize;
+}
+.foot div ul{
+    list-style: none;
+}
+
+@media (max-width:600px) {
+
+    body{
+        
+    }
+    
+}
