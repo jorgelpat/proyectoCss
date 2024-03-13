@@ -5,6 +5,8 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     background: #1e1d2b;
+    word-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 
@@ -29,8 +31,10 @@
 /* header 1 -----------------------------------------------------------------------------------------------*/
 .container .header1{
     grid-area: header1;
-    height: 25px;
+    height: 50px;
     color: #ff702a;
+    font-size: 2em;
+    padding-left: 80px;
 }
 
 
@@ -39,6 +43,7 @@
 .container .nav{
     grid-area: headernav;
     height: 25px;
+    padding: 10px;
 }
 .container .nav ul{
     display: flex;
@@ -48,14 +53,41 @@
 }
 
 
-
-
 /* home -----------------------------------------------------------------------------------------------------*/
 .container .homeText{
     grid-area: homeTex;
+    height: 100vhs;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* text-transform: capitalize; */
+    font-size: 2em;
+    padding-left: 100px;
+}
+.container .homeText h2{
+    color: #ff702a;
+    text-transform: capitalize;
 }
 .container .homeImg{
     grid-area: homeImg;
+    height: 100vhs;
+    display: flex;
+    justify-content: center;
+}
+.container .homeImg img{
+    height: 800px;
+}
+.container .homeText b{
+    display: flex;
+    align-self: flex-start;
+}
+
+.container .homeText button{
+    height: 30px;
+    width: 110px;
+    background: #ff702a;
+    border: none;
+    padding: 5px;
 }
 
 
@@ -65,9 +97,34 @@
 /* about ------------------------------------------------------------------------------------------------------*/
 .container .aboutImg{
     grid-area: aboutImg;
+    height: 100vhs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .aboutImg img{
+    height: 650px;
 }
 .container .aboutText{
     grid-area: aboutTex;
+    height: 100vhs;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 380px;
+    padding-left: 49px;
+}
+.container .aboutText h3{
+    color: #ff702a;
+}
+.container .aboutText b{
+    font-size: 2em;
+}
+.container .aboutText button{
+    background: #ff702a;
+    height: 25px;
+    width: 100px;
+    border: none;
 }
 
 
@@ -85,6 +142,25 @@
     gap: 20px 50px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.container .foodMenu .fila img{
+    display: flex;
+    justify-self: center;
+}
+
+.container .foodMenu h3, b{
+    display: flex;
+    justify-content: center;
+}
+.container .foodMenu h3{
+    color: #ff702a;
+}
+.container .foodMenu b{
+    font-size: 2.5em;
+}
+.container .foodMenu .fila div b::nth-last-child(){
+    color: #ff702a;
 }
 
 
@@ -128,4 +204,22 @@
 
 .foot div ul{
     list-style: none;
+}
+
+
+
+@media (max-width: 400px){
+    
+    
+    
+    .container{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header1"
+        "homeTex"
+        "homImg";
+    }
+
+    
 }
