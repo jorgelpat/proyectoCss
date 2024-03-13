@@ -27,6 +27,8 @@
     height: 30px;
     text-transform: capitalize;
     padding-inline-start: 10px;
+    color: #ff702a;
+    grid-area: header pag;
 }
 .container .content1 h2{
     font-size: 3em;
@@ -46,8 +48,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px 120px;
+    padding-left: 220px;
+    /* padding: 20px 120px; */
     text-transform: capitalize;
+    grid-area: title home;
 }
 .content1 .cuadro1 h2, b, button{
     align-self: flex-start;
@@ -59,6 +63,9 @@
     font-weight: 700;
     padding: 5px;
 }
+.content2{
+    grid-area: contend 2;
+}
 .content2 div{
     /* height: 325px; */
     height: 100vh;
@@ -68,6 +75,9 @@
 }
 .content2 img{
     width: 400px;
+}
+.cuadro2{
+    grid-area: home img;
 }
 .content3 img{
     height: 400px;
@@ -81,7 +91,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
+    padding-right: 50px;
 }
 .content4 h3{
     color: #ff702a;
@@ -223,10 +233,22 @@
     list-style: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:400px) {
 
-    body{
-        
+    .container{
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+                            "header pag"
+                            "title home"
+                            "home img"
+                            "content 2";
     }
-    
+    .content1 .cuadro1{
+        /* height: 100vh; */
+        /* padding-left: 220px; */
+        /* padding: 20px 120px; */
+        text-transform: capitalize;
+    }
+
 }
