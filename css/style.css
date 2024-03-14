@@ -28,7 +28,7 @@
     text-transform: capitalize;
     padding-inline-start: 10px;
     color: #ff702a;
-    grid-area: header pag;
+    /* grid-area: header pag; */
 }
 .container .content1 h2{
     font-size: 3em;
@@ -51,7 +51,7 @@
     /* padding-left: 220px; */
     padding: 20px 120px;
     text-transform: capitalize;
-    grid-area: title home;
+    /* grid-area: title home; */
 }
 .content1 .cuadro1 h2, b, button{
     align-self: flex-start;
@@ -64,7 +64,7 @@
     padding: 5px;
 }
 .content2{
-    grid-area: contend 2;
+    /* grid-area: contend 2; */
 }
 .content2 div{
     /* height: 325px; */
@@ -231,6 +231,11 @@
 }
 .foot div ul{
     list-style: none;
+}
+
+.foot div:last-child ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (max-width:400px) {
