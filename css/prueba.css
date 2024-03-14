@@ -75,7 +75,7 @@
     justify-content: center;
 }
 .container .homeImg img{
-    height: 650px;
+    height: 560px;
 }
 .container .homeText b{
     display: flex;
@@ -105,7 +105,7 @@
     align-items: center;
 }
 .container .aboutImg img{
-    height: 650px;
+    height: 450px;
 }
 .container .aboutText{
     grid-area: aboutTex;
@@ -113,7 +113,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-right: 380px;
+    padding-right: 150px;
     padding-left: 49px;
 }
 .container .aboutText h3{
@@ -164,6 +164,15 @@
     color: #ff702a;
 }
 
+.foodMenu .fila b:last-child{
+    color: #ff702a;
+}
+.foodMenu b{
+    font-size: 2em;
+}
+.foodMenu .fila div b,p{
+    color: #000;
+}
 
 
 
@@ -208,8 +217,13 @@
     font-size: 1.5em;
 }
 
+.service .fila div b{
+    color: #ff702a;
+}
 
-
+.service .fila div p{
+    color: #fff;
+}
 
 
 /* quality ---------------------------------------------------------------------------------------------------*/
@@ -269,6 +283,11 @@
 
 .foot div ul{
     list-style: none;
+}
+
+.foot div:last-child ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 
