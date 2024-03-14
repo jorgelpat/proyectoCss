@@ -47,24 +47,38 @@ main section {
 }
 
 main section article {
-    border-radius: 2em;
-    border: 2px solid var(--secondary-color);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    border: 2px solid black;
     width: 60%;
 }
 
 main section article img {
     width: 100%;
     max-height: max-content;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
 }
 
 h2 {
+    position: fixed;
     color: orange;
 }
 
 .navigation li {
     padding: 1.2em 0;
 }
+
+.navigation_abrigos li {
+    padding: 1.2em 0;
+}
 .navigation li:first-child {
+    background: lightblue;
+    border: black solid;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.navigation_abrigos li:nth-child(2) {
     background: lightblue;
     border: black solid;
     font-weight: 600;
