@@ -81,6 +81,10 @@ h2 {
     padding: 1.2em 0;   
 }
 
+.navigation_pantalones li {
+    padding: 1.2em 0;   
+}
+
 .navigation li:first-child {
     background: lightblue;
     /* border: black solid; */
@@ -103,6 +107,13 @@ h2 {
 }
 
 .navigation_camisetas li:nth-child(3) a {
+    background: orange;
+    /* border: black solid; */
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.navigation_pantalones li:last-child a {
     background: orange;
     /* border: black solid; */
     font-weight: 600;
