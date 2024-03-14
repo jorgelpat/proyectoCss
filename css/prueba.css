@@ -12,8 +12,8 @@
 
 /* container completo----------------------------------------------------------------------------------------- */
 .container{
-    width: 100vws;
-    height: 100hw;
+    width: 100svw;
+    height: 100vh;
     color: #fff;
     display: grid;
     grid-template-rows: 1/8fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -56,7 +56,7 @@
 /* home -----------------------------------------------------------------------------------------------------*/
 .container .homeText{
     grid-area: homeTex;
-    height: 100vhs;
+    height: 100svh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -70,7 +70,7 @@
 }
 .container .homeImg{
     grid-area: homeImg;
-    height: 100vhs;
+    height: 100svh;
     display: flex;
     justify-content: center;
 }
@@ -88,6 +88,8 @@
     background: #ff702a;
     border: none;
     padding: 5px;
+    color: #fff;
+    box-sizing: initial;
 }
 
 
@@ -97,7 +99,7 @@
 /* about ------------------------------------------------------------------------------------------------------*/
 .container .aboutImg{
     grid-area: aboutImg;
-    height: 100vhs;
+    height: 100svh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,7 +109,7 @@
 }
 .container .aboutText{
     grid-area: aboutTex;
-    height: 100vhs;
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,15 +172,40 @@
 
 /* Service -----------------------------------------------------------------------------*/
 .container .service{
+    /* height: 100svh; */
     grid-area: service;
     grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .container .service .fila{
+    width: 70%;
     display: grid;
+    align-items: start;
+    justify-items: center;
+    text-align: center;
     padding: 50px;
     gap: 20px 50px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.service img {
+    height: 300px;
+}
+
+.container .service h3{
+    color: #ff702a;
+    text-transform: capitalize;
+}
+
+.service b{
+    font-size: 2em;
+}
+
+.fila div b{
+    font-size: 1.5em;
 }
 
 
@@ -187,8 +214,45 @@
 
 /* quality ---------------------------------------------------------------------------------------------------*/
 .container .quality{
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: quality;
     grid-column: 1/3;
+}
+
+.quality .cuadro{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffefe8;
+    color: #000;
+    gap: 30px;
+}
+
+.cuadro h2{
+    font-size: 2.5em;
+    background: #ffefe8;
+}
+
+.quality button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #ff702a;
+    box-sizing: initial;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    block-size: initial;
+    color: #fff;
+    padding: 3px;
 }
 
 
