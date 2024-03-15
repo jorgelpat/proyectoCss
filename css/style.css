@@ -82,7 +82,7 @@ main section article img {
 }
 
 h2 {
-    width: 790px;
+    width: 60%;
     height: 45px;
     position: fixed;
     color: var(--secundary-color);
