@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
     <aside>
-        <img src="storage/img/campusshop_azul.png" alt="">
-        <nav>
+        <h1>CampusShop</h1>
+        <nav class="nav_carrito">
             <ul class="navigation_carrito">
                 <li><a href="index.html">Todos los productos</a></li>
                 <li><a href="abrigos.html">Abrigos</a></li>
@@ -17,36 +18,90 @@
                 <li><a href="pantalones.html">Pantalones</a></li>
             </ul>
         </nav>
-        <a class="borderCarrito" href="carrito.html">Carrito</a>
+        <a class="backg" href="carrito.html">Carrito</a>
+  
         <footer>© 2023 Camper</footer>
     </aside>
-    <main>
+    <main class="carrito">
         <h2>Carrito</h2>
-        <div>
-            <p>Tu carrito está vacio</p>
-            <div class="productos_carrito">
-                <div class="producto_carrito">
-                    <img src="storage/img/abrigoBlackCatalyst.webp" alt="">
-                    <div class="nombre_carrito">
-                        <small>titulo</small>
-                        <h3>abrigo01</h3>
-                    </div>
-                    <div class="cantidad_carrito">
-                        <small>cantidad</small>
-                        <p>1</p>
-                    </div>
-                    <div class="precio_carrito">
-                        <small>precio</small>
-                        <p>$1000</p>
-                    </div>
-                    <div class="subtotal_carrito">
-                        <small>subtotal</small>
-                        <p>$1000</p>
-                    </div>
-                    <button>eliminar</button>
+        <section class="carrito_vw">
+            <article>
+                <img src="storage/img/pantalonBlueCqr.jpg" alt=""/>
+                <div>
+                    <h3>Artículo:</h3>
+                    <p>Pantalon 01</p>
                 </div>
+                <div>
+                    <h3>Cantidad:</h3>
+                    <p>2</p>
+                </div>
+                <div>
+                    <h3>Precio:</h3>
+                    <p>$ 1.000</p>
+                </div>
+                <div>
+                    <h3>Subtotal:</h3>
+                    <p>$ 2.000</p>
+                </div>
+                <div>
+                    <a class="trash" href=""><img src="storage/img/trash-fill.svg" alt=""></a>
+                </div>
+                
+            </article>
+            <article>
+                <img src="storage/img/abrigoWhiteMoerdeng.jpg" alt=""/>
+                <div>
+                    <h3>Artículo:</h3>
+                    <p>Abrigo 02</p>
+                </div>
+                <div>
+                    <h3>Cantidad:</h3>
+                    <p>1</p>
+                </div>
+                <div>
+                    <h3>Precio:</h3>
+                    <p>$ 1.000</p>
+                </div>
+                <div>
+                    <h3>Subtotal:</h3>
+                    <p>$ 1.000</p>
+                </div>
+                <div>
+                    <a class="trash" href=""><img src="storage/img/trash-fill.svg" alt=""></a>
+                </div>
+                <!-- <img src="storage/img/trash-fill.svg" alt=""> -->
+            </article>
+            <article>
+                <img src="storage/img/camisetaGreenMagcomsen.jpg" alt=""/>
+                <div>
+                    <h3>Artículo:</h3>
+                    <p>Camiseta 02</p>
+                </div>
+                <div>
+                    <h3>Cantidad:</h3>
+                    <p>2</p>
+                </div>
+                <div>
+                    <h3>Precio:</h3>
+                    <p>$ 1.000</p>
+                </div>
+                <div>
+                    <h3>Subtotal:</h3>
+                    <p>$ 2.000</p>
+                </div>
+                <div>
+                    <a class="trash" href=""><img src="storage/img/trash-fill.svg" alt=""></a>
+                </div>
+                
+            </article>
+            <div>
+            <a>Vaciar carrito</a>
+            <div id="confirm-payment">
+                <p>Total:</p>
+                <p>$ 5.000</p>
+                <a>Comprar</a>
             </div>
-        </div>
-    </main>
+        </section>
+      </main>
 </body>
 </html>
