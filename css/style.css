@@ -29,7 +29,8 @@ aside {
     padding: 3svh 2vw;
     justify-content: space-between;
     background: var(--primary-color);
-    border-start-start-radius: 4%;
+    border-radius: 4%;
+    border: var(--secundary-color) solid;
 }
 
 aside a {
@@ -49,6 +50,7 @@ aside img {
 
 h1 {
     color: red;
+    font-size: 2em;
 }
 
 main {
@@ -56,6 +58,7 @@ main {
     overflow-y: scroll;
     padding: 3svh 2vw;
     border-radius: 3%;
+    border-bottom: 25px solid black;
 }
 
 main section {
