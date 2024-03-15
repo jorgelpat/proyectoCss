@@ -9,6 +9,7 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
     background-color: transparent;
+    color: var(--terciary-color);
   }
 
 body {
@@ -17,6 +18,7 @@ body {
     display: flex;
     height: 100svh;
     column-gap: 2vw;
+    background: var(--primary-color);
 } 
 
 aside {
@@ -45,6 +47,10 @@ aside img {
     width: 200px;
 }
 
+h1 {
+    color: red;
+}
+
 main {
     width: 75%;
     overflow-y: scroll;
@@ -57,13 +63,15 @@ main section {
     grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
     grid-template-rows: auto;
     gap: 2svh 2vw;
+    padding-top: 70px;
 }
 
 main section article {
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
-    border: 2px solid black;
+    border: 2px solid red;
     width: 60%;
+    background: var(--terciary-color);
 }
 
 main section article img {
@@ -74,8 +82,11 @@ main section article img {
 }
 
 h2 {
+    width: 790px;
+    height: 45px;
     position: fixed;
     color: var(--secundary-color);
+    background: var(--primary-color) ;
 }
 
 .navigation li {
@@ -99,7 +110,7 @@ h2 {
 }
 
 .navigation li:first-child {
-    background: lightblue;
+    /* background: lightblue; */
     /* border: black solid; */
     font-weight: 600;
     border-radius: 10px;
@@ -142,6 +153,10 @@ aside .backg  {
 
 li {
     list-style: none;
+}
+
+main section article div h3 {
+    color: var(--primary-color);
 }
 
 main section article div {
@@ -190,6 +205,10 @@ main section article div a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr .5fr;
     grid-template-rows: 1fr;
     width: 600px;
+}
+
+.carrito_vw article div h3, p {
+    color: var(--primary-color);
 }
 
 .carrito article div {
@@ -255,6 +274,10 @@ aside .navigation_carrito ul {
     gap: 2em;
     border: black solid;
     border-radius: 15px;
+}
+
+#confirm-payment p {
+    color: var(--terciary-color);
 }
 
 #confirm-payment a {
